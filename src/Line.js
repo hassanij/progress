@@ -22,6 +22,7 @@ class Line extends Component {
     const pathStyle = {
       strokeDasharray: '100px, 100px',
       strokeDashoffset: `${(100 - percent)}px`,
+      stokeOpacity: percent ? 1 : 0,
       transition: 'stroke-dashoffset 0.3s ease 0s, stroke 0.3s linear',
     };
 
